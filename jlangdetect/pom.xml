@@ -20,13 +20,14 @@
 
 
 	<modelVersion>4.0.0</modelVersion>
-    <parent>
-	    <groupId>me.champeau.jlangdetect</groupId>
-	    <artifactId>jlangdetect-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
-    <artifactId>jlangdetect</artifactId>
-    <packaging>jar</packaging>
+  <parent>
+    <groupId>me.champeau.jlangdetect</groupId>
+    <artifactId>jlangdetect-parent</artifactId>
+      <version>1.0.0</version>
+  </parent>
+
+  <artifactId>jlangdetect</artifactId>
+  <packaging>jar</packaging>
 	<name>Java Language Detector</name>
 
 	<developers>
