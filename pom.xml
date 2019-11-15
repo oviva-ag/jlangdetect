@@ -24,7 +24,7 @@
 	<groupId>me.champeau.jlangdetect</groupId>
 	<artifactId>jlangdetect-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.5-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>Java Language Detector parent project</name>
 
 	<developers>
@@ -100,17 +100,17 @@
         </repository>
     </repositories>
 
-    <distributionManagement>
-        <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>googlecode</id>
-            <url>svn:https://jlangdetect.googlecode.com/svn/repo</url>
-        </repository>
-    </distributionManagement>
-    
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Oviva Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/oviva-ag/maven-repo</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
-        <extensions>
-            <extension>
+		<extensions>
+			<extension>
                 <groupId>org.jvnet.wagon-svn</groupId>
                 <artifactId>wagon-svn</artifactId>
                 <version>1.8</version>
@@ -143,7 +143,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9</version>
+                <version>3.1.1</version>
+				<configuration>
+					<doclint>none</doclint>
+				</configuration>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
