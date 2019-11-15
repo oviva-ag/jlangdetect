@@ -24,7 +24,7 @@
 	<groupId>me.champeau.jlangdetect</groupId>
 	<artifactId>jlangdetect-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.3</version>
+	<version>1.0.5</version>
 	
 	<name>Java Language Detector parent project</name>
 
